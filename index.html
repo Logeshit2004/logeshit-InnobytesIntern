@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Sukh Guest House - Royal Luxury in West Bengal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=32&h=32&fit=crop">
+</head>
+<body>
+    <div id="loader" class="professional-loader">
+        <div class="loader-background">
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="loader-content">
+            <div class="brand-loader">
+                <div class="royal-emblem">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h1 class="loader-title">King Sukh</h1>
+                <p class="loader-subtitle">Guest House</p>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+                <div id="progress-percentage" class="progress-text">0</div>
+                <div id="loading-message" class="loading-message">Initializing Royal Experience...</div>
+            </div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-controls">
+        <button id="theme-toggle" class="theme-btn" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-main">King Sukh</span>
+                        <span class="brand-sub">Guest House</span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#rooms" class="nav-link"><i class="fas fa-bed"></i>Rooms</a></li>
+                    <li><a href="#amenities" class="nav-link"><i class="fas fa-spa"></i>Amenities</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i>Gallery</a></li>
+                    <li><a href="#location" class="nav-link"><i class="fas fa-map"></i>Location</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><button id="navbar-book-btn" class="btn-reserve"><i class="fas fa-calendar-check"></i>Reserve Now</button></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-title">
+                    <span class="title-welcome">Welcome to</span>
+                    <span class="title-main">King Sukh Guest House</span>
+                    <span class="title-sub">Royal Hospitality Redefined</span>
+                </div>
+                <p class="hero-description">Experience royal luxury in the beautiful hills of West Bengal. Premium amenities with regal hospitality for an unforgettable stay.</p>
+                <div class="hero-buttons">
+                    <button id="hero-book-btn" class="btn-primary">
+                        <i class="fas fa-crown"></i>Book Royal Stay
+                    </button>
+                    <button id="virtual-tour-btn" class="btn-outline">
+                        <i class="fas fa-play"></i>Virtual Tour
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-bed section-icon"></i>
+                    <h2 class="section-title">Royal Accommodations</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Choose from our exquisite collection of royal chambers</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=250&fit=crop&auto=format" alt="Royal Chambers" loading="lazy">
+                            <div class="room-badge">Most Popular</div>
+                        </div>
+                        <h3>Royal Chambers</h3>
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <p>Elegantly furnished rooms with panoramic hill views and premium amenities.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-wifi"></i>Free WiFi</span>
+                            <span><i class="fas fa-coffee"></i>Breakfast</span>
+                            <span><i class="fas fa-car"></i>Parking</span>
+                            <span><i class="fas fa-mountain"></i>Hill View</span>
+                        </div>
+                        <div class="room-price-section">
+                            <div class="room-price">₹4,999 <span>/night</span></div>
+                            <p class="price-includes">*Includes breakfast, WiFi & taxes</p>
+                            <button class="book-room-btn" data-room="royal-chambers">
+                                <i class="fas fa-calendar-check"></i>Book Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&h=250&fit=crop&auto=format" alt="Family Palace Suites" loading="lazy">
+                            <div class="room-badge family-badge">Family Choice</div>
+                        </div>
+                        <h3>Family Palace Suites</h3>
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <p>Spacious royal suites perfect for families with separate living areas.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-users"></i>Family Room</span>
+                            <span><i class="fas fa-utensils"></i>Kitchenette</span>
+                            <span><i class="fas fa-couch"></i>Living Area</span>
+                            <span><i class="fas fa-gamepad"></i>Recreation</span>
+                        </div>
+                        <div class="room-price-section">
+                            <div class="room-price">₹7,499 <span>/night</span></div>
+                            <p class="price-includes">*Includes breakfast for 4, WiFi & taxes</p>
+                            <button class="book-room-btn" data-room="family-suite">
+                                <i class="fas fa-calendar-check"></i>Book Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=250&fit=crop&auto=format" alt="Emperor Suites" loading="lazy">
+                            <div class="room-badge premium-badge">Ultra Luxury</div>
+                        </div>
+                        <h3>Emperor Suites</h3>
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(5.0/5)</span>
+                        </div>
+                        <p>Ultimate luxury accommodations with breathtaking views and royal treatment.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-crown"></i>Royal Suite</span>
+                            <span><i class="fas fa-bath"></i>Jacuzzi</span>
+                            <span><i class="fas fa-concierge-bell"></i>Butler</span>
+                            <span><i class="fas fa-champagne-glasses"></i>Premium Bar</span>
+                        </div>
+                        <div class="room-price-section">
+                            <div class="room-price">₹12,999 <span>/night</span></div>
+                            <p class="price-includes">*Includes all meals, butler service</p>
+                            <button class="book-room-btn" data-room="emperor-suite">
+                                <i class="fas fa-calendar-check"></i>Book Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=250&fit=crop&auto=format" alt="Honeymoon Haven" loading="lazy">
+                            <div class="room-badge romantic-badge">Romantic</div>
+                        </div>
+                        <h3>Honeymoon Haven</h3>
+                        <div class="room-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <p>Romantic retreat designed for couples with intimate settings.</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-heart"></i>Romantic</span>
+                            <span><i class="fas fa-hot-tub"></i>Private Pool</span>
+                            <span><i class="fas fa-camera"></i>Photography</span>
+                            <span><i class="fas fa-glass-cheers"></i>Champagne</span>
+                        </div>
+                        <div class="room-price-section">
+                            <div class="room-price">₹8,999 <span>/night</span></div>
+                            <p class="price-includes">*Includes romantic dinner & photography</p>
+                            <button class="book-room-btn" data-room="honeymoon-haven">
+                                <i class="fas fa-calendar-check"></i>Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-spa section-icon"></i>
+                    <h2 class="section-title">Royal Amenities</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">World-class facilities and premium services</p>
+                </div>
+                <div class="amenities-advanced-grid">
+
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-utensils amenity-icon"></i>
+                            <h3>Royal Dining Experience</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Exquisite multi-cuisine restaurant with master chefs and premium service.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-chef-hat"></i>
+                                    <span>Master Chefs</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Multi-Cuisine</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-wine-glass"></i>
+                                    <span>Premium Bar</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>24/7 Service</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-spa amenity-icon"></i>
+                            <h3>Golden Spa & Wellness</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Luxury spa treatments and wellness facilities for complete rejuvenation.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Ayurvedic Treatments</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-hot-tub"></i>
+                                    <span>Jacuzzi & Sauna</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-hands"></i>
+                                    <span>Massage Therapy</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Fitness Center</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-gamepad amenity-icon"></i>
+                            <h3>Royal Recreation</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Entertainment facilities and recreational activities for all ages.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-swimming-pool"></i>
+                                    <span>Swimming Pool</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-table-tennis"></i>
+                                    <span>Indoor Games</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chess"></i>
+                                    <span>Board Games</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-hiking"></i>
+                                    <span>Nature Trails</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-seedling amenity-icon"></i>
+                            <h3>Golden Gardens</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Beautiful landscaped gardens and nature experiences.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-tree"></i>
+                                    <span>Botanical Garden</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-meditation"></i>
+                                    <span>Yoga Pavilion</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Bonfire Area</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-camera-retro"></i>
+                                    <span>Photo Spots</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-briefcase amenity-icon"></i>
+                            <h3>Business & Events</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Professional facilities for business meetings and special events.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-projector"></i>
+                                    <span>Conference Hall</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>AV Equipment</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-glass-cheers"></i>
+                                    <span>Banquet Hall</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Event Planning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advanced-amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-concierge-bell amenity-icon"></i>
+                            <h3>Premium Services</h3>
+                        </div>
+                        <div class="amenity-content">
+                            <p>Personalized services for an exceptional royal experience.</p>
+                            <div class="amenity-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>Airport Transfer</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tshirt"></i>
+                                    <span>Laundry Service</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-room-service"></i>
+                                    <span>Room Service</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>24/7 Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-images section-icon"></i>
+                    <h2 class="section-title">Royal Gallery</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Discover the beauty and elegance of King Sukh Guest House</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop&auto=format" alt="Royal Exterior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Royal Exterior</h4>
+                            <p>Majestic architecture with golden accents</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop&auto=format" alt="Grand Lobby" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Grand Lobby</h4>
+                            <p>Luxurious welcome area with royal décor</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop&auto=format" alt="Royal Chambers" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Royal Chambers</h4>
+                            <p>Elegantly furnished with premium amenities</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop&auto=format" alt="Royal Dining" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Royal Dining</h4>
+                            <p>Exquisite multi-cuisine restaurant</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&h=300&fit=crop&auto=format" alt="Golden Spa" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Golden Spa</h4>
+                            <p>World-class spa and wellness facilities</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&auto=format" alt="Swimming Pool" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Swimming Pool</h4>
+                            <p>Crystal clear waters with mountain views</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop&auto=format" alt="Emperor Suite Bedroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Emperor Suite</h4>
+                            <p>Ultimate luxury bedroom with royal treatment</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=400&h=300&fit=crop&auto=format" alt="Royal Bathroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Royal Bathroom</h4>
+                            <p>Luxurious marble bathroom with golden fixtures</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-image="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop&auto=format">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop&auto=format" alt="Garden Views" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Garden Views</h4>
+                            <p>Beautifully landscaped royal gardens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="location" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-map-marker-alt section-icon"></i>
+                    <h2 class="section-title">Royal Location</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Nestled in the golden hills of West Bengal</p>
+                </div>
+                <div class="location-content">
+                    <div class="location-card">
+                        <h3>Nestled in the Golden Hills</h3>
+                        <div class="location-info">
+                            <div class="location-item">
+                                <strong>Royal Address:</strong>
+                                <p>Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>Nearby Royal Hills:</strong>
+                                <p>Biharinath • Baranti • Susunia</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>Royal Distance:</strong>
+                                <p>2.5h from Kolkata, 1h from Durgapur</p>
+                            </div>
+                            <div class="location-item">
+                                <strong>Golden Coordinates:</strong>
+                                <p>23.5847° N, 87.2831° E</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d87.2831!3d23.5847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM1JzA1LjAiTiA4N8KwMTYnNTkuMiJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-envelope section-icon"></i>
+                    <h2 class="section-title">Connect With Royalty</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Experience premium hospitality - reach out to us</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info-section">
+                        <div class="contact-hero">
+                            <h3>Get In Touch</h3>
+                            <p>Our royal concierge team is available 24/7 to assist you.</p>
+                        </div>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Direct Reservation</h4>
+                                    <p>+91 7502724515</p>
+                                    <span>Available 24/7</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email Concierge</h4>
+                                    <p>reservations@kingsukh.com</p>
+                                    <span>Response within 2 hours</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>WhatsApp Butler</h4>
+                                    <p>+91 7502724515</p>
+                                    <span>Instant assistance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-section">
+                        <div class="form-header">
+                            <h3>Send Royal Message</h3>
+                            <p>Share your requirements and we'll craft the perfect experience</p>
+                        </div>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="booking">Room Booking</option>
+                                        <option value="event">Event Planning</option>
+                                        <option value="inquiry">General Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your royal requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>Send Royal Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="royal-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>King Sukh Guest House</h3>
+                        <p>Experience royal hospitality in the heart of West Bengal's golden hills. Our commitment to excellence ensures every stay is memorable.</p>
+                        <button id="previous-status-btn" class="btn-outline" style="margin-top: 1rem;">
+                            <i class="fas fa-search"></i>Check Booking Status
+                        </button>
+                    </div>
+                    <div class="social-media-section">
+                        <h4>Royal Reservations</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/kingsukh/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://wa.me/917502724515?text=Hello,%20I%20would%20like%20to%20book%20a%20room%20at%20King%20Sukh%20Guest%20House" target="_blank" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://www.youtube.com/@KingSukhGuestHouse" target="_blank" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/kingsukh-guest-house" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Royal Contact</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7502724515</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>reservations@kingsukh.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 King Sukh Guest House. All rights reserved. | Designed with Royal Excellence</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="booking-modal" class="booking-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2><i class="fas fa-crown"></i>Royal Reservation</h2>
+                <button id="close-booking-modal" class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guest-name">Guest Name</label>
+                            <input type="text" id="guest-name" name="guest-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-email">Email Address</label>
+                            <input type="email" id="guest-email" name="guest-email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guest-phone">Phone Number</label>
+                            <input type="tel" id="guest-phone" name="guest-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="room-type">Room Type</label>
+                            <select id="room-type" name="room-type" required>
+                                <option value="">Select Room Type</option>
+                                <option value="royal-chambers">Royal Chambers - ₹4,999/night</option>
+                                <option value="family-suite">Family Palace Suites - ₹7,499/night</option>
+                                <option value="emperor-suite">Emperor Suites - ₹12,999/night</option>
+                                <option value="honeymoon-haven">Honeymoon Haven - ₹8,999/night</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin-date">Check-in Date</label>
+                            <input type="date" id="checkin-date" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-date">Check-out Date</label>
+                            <input type="date" id="checkout-date" name="checkout" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special requirements or preferences..."></textarea>
+                    </div>
+                    <div class="booking-total">
+                        <div class="total-display">
+                            <span>Total Amount:</span>
+                            <span id="total-amount">₹0</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-credit-card"></i>Confirm Royal Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="virtual-tour-modal" class="virtual-tour-modal">
+        <div class="modal-overlay"></div>
+        <div class="virtual-tour-container">
+            <div class="tour-header">
+                <h2><i class="fas fa-play-circle"></i>Virtual Royal Tour</h2>
+                <button id="close-virtual-tour" class="close-modal">&times;</button>
+            </div>
+            <div class="tour-content">
+                <div class="tour-navigation">
+                    <button class="tour-nav-btn active" data-section="exterior">Royal Exterior</button>
+                    <button class="tour-nav-btn" data-section="lobby">Grand Lobby</button>
+                    <button class="tour-nav-btn" data-section="rooms">Royal Chambers</button>
+                    <button class="tour-nav-btn" data-section="dining">Royal Dining</button>
+                    <button class="tour-nav-btn" data-section="spa">Golden Spa</button>
+                </div>
+                <div class="tour-video-container">
+                    <div class="tour-section active" data-section="exterior">
+                        <video class="tour-video" controls muted>
+                            <source src="video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tour-description">
+                            <h3>Royal Exterior</h3>
+                            <p>Experience the majestic architecture and beautiful landscaping of our royal property.</p>
+                        </div>
+                    </div>
+                    <div class="tour-section" data-section="lobby">
+                        <video class="tour-video" controls muted>
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tour-description">
+                            <h3>Grand Lobby</h3>
+                            <p>Step into our luxurious lobby with royal décor and premium amenities.</p>
+                        </div>
+                    </div>
+                    <div class="tour-section" data-section="rooms">
+                        <video class="tour-video" controls muted>
+                            <source src="video3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tour-description">
+                            <h3>Royal Chambers</h3>
+                            <p>Explore our elegantly furnished rooms with panoramic views and luxury amenities.</p>
+                        </div>
+                    </div>
+                    <div class="tour-section" data-section="dining">
+                        <video class="tour-video" controls muted>
+                            <source src="video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tour-description">
+                            <h3>Royal Dining</h3>
+                            <p>Discover our exquisite dining areas and multi-cuisine restaurant facilities.</p>
+                        </div>
+                    </div>
+                    <div class="tour-section" data-section="spa">
+                        <video class="tour-video" controls muted>
+                            <source src="video5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tour-description">
+                            <h3>Golden Spa</h3>
+                            <p>Experience our world-class spa and wellness facilities for ultimate relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="booking-status-modal" class="booking-status-modal">
+        <div class="modal-overlay"></div>
+        <div class="status-modal-container">
+            <div class="status-modal-header">
+                <h2><i class="fas fa-search"></i>Booking Status</h2>
+                <button id="close-booking-status" class="close-modal">&times;</button>
+            </div>
+            <div class="status-modal-body">
+                <form class="status-search-form">
+                    <h3>Check Your Reservation</h3>
+                    <div class="form-group">
+                        <label for="booking-search-input">Booking ID or Email</label>
+                        <input type="text" id="booking-search-input" name="search" placeholder="Enter booking ID (e.g., KSH2025123456) or email address" required>
+                    </div>
+                    <button type="button" id="search-booking-btn" class="search-btn">
+                        <i class="fas fa-search"></i>Search Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="assistant-float" class="assistant-float">
+        <i class="fas fa-robot"></i>
+        <div class="pulse-ring"></div>
+    </div>
+
+    <div id="assistant-container" class="assistant-container" style="display: none;">
+        <div class="assistant-header">
+            <div class="assistant-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="assistant-info">
+                <h3>Royal Assistant</h3>
+                <div class="status">
+                    <div class="status-dot"></div>
+                    <span>Online</span>
+                </div>
+            </div>
+            <div class="assistant-controls">
+                <button id="minimize-assistant" class="minimize-btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button id="close-assistant" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    Welcome to King Sukh Guest House! I'm your Royal Assistant. How may I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="quick-actions">
+            <button class="quick-btn" data-message="Tell me about room rates">Room Rates</button>
+            <button class="quick-btn" data-message="What amenities do you have?">Amenities</button>
+            <button class="quick-btn" data-message="How can I book a room?">Book Room</button>
+            <button class="quick-btn" data-message="Where are you located?">Location</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-message-btn" class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
